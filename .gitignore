@@ -1,0 +1,11 @@
+.DS_Store
+*.pyc
+*.png
+*.jpg
+*.eot
+*.svg
+*.ttf
+*.woff
+*.woff2
+*.otf
+*.ico
