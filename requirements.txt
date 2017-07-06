@@ -1,0 +1,4 @@
+Django==1.10.6
+pandas==0.19.2
+djangorestframework==3.6.2
+django-leaflet==0.20.0
