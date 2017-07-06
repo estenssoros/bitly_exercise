@@ -9,3 +9,5 @@
 *.woff2
 *.otf
 *.ico
+*.csv
+db.sqlite3
