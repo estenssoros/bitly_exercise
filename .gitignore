@@ -11,3 +11,4 @@
 *.ico
 *.csv
 db.sqlite3
+maxmind/static
