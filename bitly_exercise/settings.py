@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'race_average',
     'landing',
     'rest_framework',
+    'leaflet',
 ]
 
 MIDDLEWARE = [
