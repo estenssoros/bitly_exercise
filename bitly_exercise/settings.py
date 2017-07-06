@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'maxmind',
     'race_average',
     'landing',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
