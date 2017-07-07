@@ -28,6 +28,7 @@ class DBMaker(object):
                 table_name, _ = os.path.splitext(f)
                 table_name = table_name.lower().split('-')[-1]
                 self.curs.execute('drop table if exists {}'.format(table_name))
+                self.conn.commit()
                 df = pd.read_csv(os.path.join(path, f), skiprows=1)
                 cols = {col: camel_to_snake(col) for col in df.columns}
                 df = df.rename(columns=cols)
