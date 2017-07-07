@@ -60,17 +60,9 @@ function drawMap(data){
   for (var i = 0; i < data_length; i++){
     var marker = L.marker([data[i].latitude, data[i].longitude]);
     markers.addLayer(marker);
+    marker.bindPopup("<a href='/maxmind/loc_detail/"+String(data[i].loc_id)+"'>"+String(data[i].loc_id)+"</a>");
   };
   mymap.addLayer(markers);
 };
 </script>
-<script>
-
-  // var marker = L.marker([{{geo.latitude}},{{geo.longitude}}]);
-  // marker.bindPopup("<a href='/swimlane/ip_detail/{{geo.ip}}/'>{{geo.ip}}</a>");
-  // markers.addLayer(marker);
-  //
-// mymap.addLayer(markers);
-</script>
-
 {% endblock %}
