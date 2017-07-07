@@ -43,7 +43,8 @@ powered by leaflet and leaflet-markcluster
 
 makes ajax calls to **/maxmind/api/geo_data** and **/maxmind/api/loc_data**
 
-returns the first 2000 data entries
+
+returns the first 2000 data entries:
 ```
 curl 'http://0.0.0.0:8000/maxmind/api/geo_data/'
 [{
@@ -71,6 +72,7 @@ curl 'http://0.0.0.0:8000/maxmind/api/geo_data/'
 },...]
 ```
 
+returns single location id:
 ```
 $ curl 'http://0.0.0.0:8000/maxmind/api/loc_data/?loc_id=206'
 {
@@ -106,3 +108,5 @@ docker run -it \
 
 - include pagination in api/geodata
 - examine database further for parent-child connections
+- create apis for other ip ids
+- clustering of ips to be able to show on map
