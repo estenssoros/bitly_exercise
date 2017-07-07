@@ -45,7 +45,7 @@ makes ajax calls to **/maxmind/api/geo_data** and **/maxmind/api/loc_data**
 
 returns the first 2000 data entries
 ```
-curl 'http://127.0.0.1:8000/maxmind/api/geo_data/'
+curl 'http://0.0.0.0:8000/maxmind/api/geo_data/'
 [{
   "city": null,
   "loc_id": 1,
@@ -72,7 +72,7 @@ curl 'http://127.0.0.1:8000/maxmind/api/geo_data/'
 ```
 
 ```
-$ curl 'http://127.0.0.1:8000/maxmind/api/loc_data/?loc_id=206'
+$ curl 'http://0.0.0.0:8000/maxmind/api/loc_data/?loc_id=206'
 {
   "start_loc": {
     "city": null,
@@ -91,6 +91,16 @@ $ curl 'http://127.0.0.1:8000/maxmind/api/loc_data/?loc_id=206'
 ```
 
 ***
+
+# Docker
+if you want to run in docker:
+```
+SCRIPTPATH=`pwd -P`
+docker run -it \
+  -v $SCRIPTPATH:/home/docker/bitly_exercise \
+  -p 8000:8000 \
+  estenssoros/bitly:1.0
+```
 
 # TO DO
 
